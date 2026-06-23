@@ -17,7 +17,7 @@ export default defineConfig({
         background_color: '#F1F5F9',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        start_url: '/Routine-Tracker/',
         icons: [
           {
             src: 'icon-192.png',
