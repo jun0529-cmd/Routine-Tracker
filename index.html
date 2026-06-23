@@ -9,6 +9,14 @@
     <meta name="apple-mobile-web-app-title" content="루틴" />
     <link rel="apple-touch-icon" href="/icon-192.png" />
     <title>루틴 트래커</title>
+    <script>
+  (function(){
+    var p = window.location.search.slice(1);
+    if(p.indexOf('p=') === 0) {
+      window.history.replaceState(null, null, '/' + decodeURIComponent(p.slice(2)));
+    }
+  })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
